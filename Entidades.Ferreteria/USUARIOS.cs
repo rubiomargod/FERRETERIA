@@ -6,7 +6,30 @@ using System.Threading.Tasks;
 
 namespace Entidades.Ferreteria
 {
-    internal class USUARIOS
+    public class USUARIOS
     {
+        private int _IdUsuario;
+        private string _Nombre;
+        private string _ApellidoP;
+        private string _ApellidoM;
+        private string _FechaNacimiento;
+        private string _RFC;
+        private string _Clave;
+        private Boolean _Lectura;
+        private Boolean _Escritura;
+        private Boolean _Eliminar;
+        private Boolean _Actualizar;
+
+        public int IdUsuario { get => _IdUsuario; set => _IdUsuario = value; }
+        public string Nombre { get => _Nombre; set => _Nombre = value; }
+        public string ApellidoP { get => _ApellidoP; set => _ApellidoP = value; }
+        public string ApellidoM { get => _ApellidoM; set => _ApellidoM = value; }
+        public string FechaNacimiento { get => _FechaNacimiento; set => _FechaNacimiento = value; }
+        public string RFC { get => _RFC; set => _RFC = value; }
+        public string Clave { get => _Clave; set => _Clave = value; }
+        public bool Lectura { get => _Lectura; set => _Lectura = value; }
+        public bool Escritura { get => _Escritura; set => _Escritura = value; }
+        public bool Eliminar { get => _Eliminar; set => _Eliminar = value; }
+        public bool Actualizar { get => _Actualizar; set => _Actualizar = value; }
     }
 }
