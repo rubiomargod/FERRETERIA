@@ -1,0 +1,10 @@
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\bin\Debug\Presentacion.Ferreteria.exe.config
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\bin\Debug\Presentacion.Ferreteria.exe
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\bin\Debug\Presentacion.Ferreteria.pdb
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\obj\Debug\Presentacion.Ferreteria.csproj.AssemblyReference.cache
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\obj\Debug\Presentacion.Ferreteria.csproj.SuggestedBindingRedirects.cache
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\obj\Debug\Presentacion.Ferreteria.Properties.Resources.resources
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\obj\Debug\Presentacion.Ferreteria.csproj.GenerateResource.cache
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\obj\Debug\Presentacion.Ferreteria.csproj.CoreCompileInputs.cache
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\obj\Debug\Presentacion.Ferreteria.exe
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\obj\Debug\Presentacion.Ferreteria.pdb
