@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Presentacion.Ferreteria
 {
-    public partial class Form1 : Form
+    public partial class FrmRefacciones : Form
     {
-        public Form1()
+        public FrmRefacciones()
         {
             InitializeComponent();
         }
