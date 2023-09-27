@@ -10,10 +10,10 @@ using Mysqlx.Crud;
 
 namespace AccesoDatos.Ferreteria
 {
-    public class RefacionesAccesoDatos
+    public class RefaccionesAccesoDatos
     {
         Conexion conexion;
-        public RefacionesAccesoDatos()
+        public RefaccionesAccesoDatos()
         {
             conexion = new Conexion("localhost","root","","FERRETERIA",3306);
         }
@@ -59,7 +59,7 @@ namespace AccesoDatos.Ferreteria
             }
             return ListaRefacciones;
         }
-        public void EliminarRefaccion(REFACCIONES refaccion)
+        public void EliminarRefaccion(int refaccion)
         {
             string consulta = string.Format("delete from REFACCIONES where codigobarras='{0}';", refaccion);
             conexion.EjecutarConsulta(consulta);

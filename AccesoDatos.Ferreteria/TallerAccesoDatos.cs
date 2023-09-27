@@ -59,7 +59,7 @@ namespace AccesoDatos.Ferreteria
             }
             return ListaHerramientas;
         }
-        public void EliminarHerramienta(TALLER herramienta)
+        public void EliminarHerramienta(int herramienta)
         {
             string consulta = string.Format("delete from taller where codigoherramienta='{0}';", herramienta);
             conexion.EjecutarConsulta(consulta);
