@@ -69,6 +69,7 @@
             // 
             // dtgrefacciones
             // 
+            this.dtgrefacciones.AllowUserToAddRows = false;
             this.dtgrefacciones.BackgroundColor = System.Drawing.Color.White;
             this.dtgrefacciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgrefacciones.GridColor = System.Drawing.Color.Black;
@@ -132,6 +133,7 @@
             this.Name = "FrmRefacciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmRefacciones";
+            this.Load += new System.EventHandler(this.FrmRefacciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgrefacciones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

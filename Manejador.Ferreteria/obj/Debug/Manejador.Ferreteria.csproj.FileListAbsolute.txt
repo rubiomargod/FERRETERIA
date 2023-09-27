@@ -1,0 +1,12 @@
+C:\Users\xrubi\Documents\Github\FERRETERIA\Manejador.Ferreteria\bin\Debug\Manejador.Ferreteria.dll
+C:\Users\xrubi\Documents\Github\FERRETERIA\Manejador.Ferreteria\bin\Debug\Manejador.Ferreteria.pdb
+C:\Users\xrubi\Documents\Github\FERRETERIA\Manejador.Ferreteria\bin\Debug\AccesoDatos.Ferreteria.dll
+C:\Users\xrubi\Documents\Github\FERRETERIA\Manejador.Ferreteria\bin\Debug\Entidades.Ferreteria.dll
+C:\Users\xrubi\Documents\Github\FERRETERIA\Manejador.Ferreteria\bin\Debug\MySql.Data.dll
+C:\Users\xrubi\Documents\Github\FERRETERIA\Manejador.Ferreteria\bin\Debug\AccesoDatos.Ferreteria.pdb
+C:\Users\xrubi\Documents\Github\FERRETERIA\Manejador.Ferreteria\bin\Debug\Entidades.Ferreteria.pdb
+C:\Users\xrubi\Documents\Github\FERRETERIA\Manejador.Ferreteria\obj\Debug\Manejador.Ferreteria.csproj.AssemblyReference.cache
+C:\Users\xrubi\Documents\Github\FERRETERIA\Manejador.Ferreteria\obj\Debug\Manejador.Ferreteria.csproj.CoreCompileInputs.cache
+C:\Users\xrubi\Documents\Github\FERRETERIA\Manejador.Ferreteria\obj\Debug\Manejador.Ferreteria.csproj.CopyComplete
+C:\Users\xrubi\Documents\Github\FERRETERIA\Manejador.Ferreteria\obj\Debug\Manejador.Ferreteria.dll
+C:\Users\xrubi\Documents\Github\FERRETERIA\Manejador.Ferreteria\obj\Debug\Manejador.Ferreteria.pdb

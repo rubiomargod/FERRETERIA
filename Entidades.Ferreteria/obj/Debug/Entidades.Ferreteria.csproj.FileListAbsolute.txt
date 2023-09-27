@@ -1,0 +1,6 @@
+C:\Users\xrubi\Documents\Github\FERRETERIA\Entidades.Ferreteria\bin\Debug\Entidades.Ferreteria.dll
+C:\Users\xrubi\Documents\Github\FERRETERIA\Entidades.Ferreteria\bin\Debug\Entidades.Ferreteria.pdb
+C:\Users\xrubi\Documents\Github\FERRETERIA\Entidades.Ferreteria\obj\Debug\Entidades.Ferreteria.csproj.AssemblyReference.cache
+C:\Users\xrubi\Documents\Github\FERRETERIA\Entidades.Ferreteria\obj\Debug\Entidades.Ferreteria.csproj.CoreCompileInputs.cache
+C:\Users\xrubi\Documents\Github\FERRETERIA\Entidades.Ferreteria\obj\Debug\Entidades.Ferreteria.dll
+C:\Users\xrubi\Documents\Github\FERRETERIA\Entidades.Ferreteria\obj\Debug\Entidades.Ferreteria.pdb

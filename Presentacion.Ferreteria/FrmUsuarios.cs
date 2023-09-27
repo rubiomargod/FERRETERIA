@@ -7,14 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Manejador.Ferreteria;
+using Entidades.Ferreteria;
 
 namespace Presentacion.Ferreteria
 {
     public partial class FrmUsuarios : Form
     {
+        
         public FrmUsuarios()
         {
             InitializeComponent();
+        }
+
+        private void FrmUsuarios_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

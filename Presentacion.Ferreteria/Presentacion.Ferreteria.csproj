@@ -106,5 +106,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades.Ferreteria\Entidades.Ferreteria.csproj">
+      <Project>{a5101b6e-ba38-42e5-acca-3b1c2783d817}</Project>
+      <Name>Entidades.Ferreteria</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Manejador.Ferreteria\Manejador.Ferreteria.csproj">
+      <Project>{cf5589c4-09df-4cbf-9acc-9c9dd78f3348}</Project>
+      <Name>Manejador.Ferreteria</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -12,3 +12,11 @@ C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\obj\Debug\Pre
 C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\obj\Debug\Presentacion.Ferreteria.FrmRefacciones.resources
 C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\obj\Debug\Presentacion.Ferreteria.FrmHerramientas.resources
 C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\obj\Debug\Presentacion.Ferreteria.FrmUsuarios.resources
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\bin\Debug\Entidades.Ferreteria.dll
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\bin\Debug\Manejador.Ferreteria.dll
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\bin\Debug\AccesoDatos.Ferreteria.dll
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\bin\Debug\MySql.Data.dll
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\bin\Debug\Entidades.Ferreteria.pdb
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\bin\Debug\Manejador.Ferreteria.pdb
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\bin\Debug\AccesoDatos.Ferreteria.pdb
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\obj\Debug\Presentacion.Ferreteria.csproj.CopyComplete

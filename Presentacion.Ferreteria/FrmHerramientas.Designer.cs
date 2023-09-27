@@ -76,6 +76,7 @@
             // 
             // dtgHerramientas
             // 
+            this.dtgHerramientas.AllowUserToAddRows = false;
             this.dtgHerramientas.BackgroundColor = System.Drawing.Color.White;
             this.dtgHerramientas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgHerramientas.GridColor = System.Drawing.Color.Black;
@@ -132,6 +133,7 @@
             this.Name = "FrmHerramientas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmHerramientas";
+            this.Load += new System.EventHandler(this.FrmHerramientas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgHerramientas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

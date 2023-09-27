@@ -2,19 +2,20 @@ CREATE DATABASE FERRETERIA;
 
 USE FERRETERIA;
 
-CREATE TABLE REFACCIONES(
+CREATE TABLE refacciones(
 codigobarras INT PRIMARY KEY,
-nombrer VARCHAR(50),
+nombre VARCHAR(50),
 descripcion VARCHAR(200),
 marca VARCHAR(50));
+INSERT INTO refacciones VALUES(54346,'Rines','para tornado 2008','apocalipsy');
 
-CREATE TABLE TALLER(
+CREATE TABLE taller(
 codigoherramienta INT PRIMARY KEY,
 nombre VARCHAR(50),
 medida VARCHAR(10),
 marca VARCHAR(50),
 descripcion VARCHAR(200));
-
+INSERT INTO taller VALUES(5454,'llave inglesa','27cm','truper','color plateada');
 CREATE TABLE USUARIOS(
 idusuario INT PRIMARY KEY AUTO_INCREMENT,
 nombre VARCHAR(50),
@@ -27,8 +28,3 @@ lectura BOOLEAN,
 escritura BOOLEAN,
 eliminacion BOOLEAN,
 actualizar BOOLEAN);
-
-        private int _CodigoBarras;
-        private string _Nombre;
-        private string _Descripcion;
-        private string _Marca;

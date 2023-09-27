@@ -31,11 +31,11 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.dtgHerramientas = new System.Windows.Forms.DataGridView();
+            this.dtgUsuarios = new System.Windows.Forms.DataGridView();
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgHerramientas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // btnModificar
@@ -74,15 +74,15 @@
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
             // 
-            // dtgHerramientas
+            // dtgUsuarios
             // 
-            this.dtgHerramientas.BackgroundColor = System.Drawing.Color.White;
-            this.dtgHerramientas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgHerramientas.GridColor = System.Drawing.Color.Black;
-            this.dtgHerramientas.Location = new System.Drawing.Point(19, 100);
-            this.dtgHerramientas.Name = "dtgHerramientas";
-            this.dtgHerramientas.Size = new System.Drawing.Size(848, 300);
-            this.dtgHerramientas.TabIndex = 17;
+            this.dtgUsuarios.BackgroundColor = System.Drawing.Color.White;
+            this.dtgUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgUsuarios.GridColor = System.Drawing.Color.Black;
+            this.dtgUsuarios.Location = new System.Drawing.Point(19, 100);
+            this.dtgUsuarios.Name = "dtgUsuarios";
+            this.dtgUsuarios.Size = new System.Drawing.Size(848, 300);
+            this.dtgUsuarios.TabIndex = 17;
             // 
             // txtbuscar
             // 
@@ -110,7 +110,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(854, 50);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Herramientas";
+            this.label1.Text = "Usuarios";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // FrmUsuarios
@@ -122,7 +122,7 @@
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.dtgHerramientas);
+            this.Controls.Add(this.dtgUsuarios);
             this.Controls.Add(this.txtbuscar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -132,7 +132,8 @@
             this.Name = "FrmUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmUsuarios";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgHerramientas)).EndInit();
+            this.Load += new System.EventHandler(this.FrmUsuarios_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtgUsuarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,7 +144,7 @@
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.DataGridView dtgHerramientas;
+        private System.Windows.Forms.DataGridView dtgUsuarios;
         private System.Windows.Forms.TextBox txtbuscar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
