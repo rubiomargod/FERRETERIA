@@ -62,6 +62,40 @@ namespace AccesoDatos.Ferreteria
             }
             return table;
         }
+        public DataSet ResultadoLogin(string q, string t)
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+                MySqlDataAdapter da = new MySqlDataAdapter(q,_connection);
+                _connection.Open();
+                da.Fill(ds, t);
+                _connection.Close();
+                return ds;
+            }
+            catch (Exception)
+            {
+                _connection.Close();
+                return ds;
+            }
+        }
+        public DataSet Permisos(string q, string t)
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+                MySqlDataAdapter da = new MySqlDataAdapter(q, _connection);
+                _connection.Open();
+                da.Fill(ds,t);
+                _connection.Close();
+                return ds;
+            }
+            catch (Exception)
+            {
+                _connection.Close();
+                return ds;
+            }
+        }
     }
 }
 

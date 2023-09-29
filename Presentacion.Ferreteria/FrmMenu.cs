@@ -12,9 +12,15 @@ namespace Presentacion.Ferreteria
 {
     public partial class FrmMenu : Form
     {
-        public FrmMenu()
+        private bool lectura=false;
+        private bool escribir=false;
+        private bool eliminar =false;
+        private bool actualizar=false;
+        public FrmMenu(string le, string es, string el, string ac)
         {
             InitializeComponent();
+            texto.Text = string.Format("{0},{1},{2},{3}",le,es,el,ac);
+            permisos(le,es,el,ac);
         }
 
         private void OptRefacciones_Click(object sender, EventArgs e)
@@ -25,7 +31,7 @@ namespace Presentacion.Ferreteria
             FU.Close();
             FrmHerramientas FH = new FrmHerramientas();
             FH.Close();
-            FR .Show();
+            FR .Show();            
         }
 
         private void OptHerramientas_Click(object sender, EventArgs e)
@@ -48,6 +54,17 @@ namespace Presentacion.Ferreteria
             FrmRefacciones FR = new FrmRefacciones();
             FR.Close();
             FU.Show();
+        }
+        private void permisos(string le,string es,string el,string ac)
+        {
+            if (le == "1")
+                lectura = true;
+            if (es == "1")
+                escribir = true;
+            if(el == "1")
+                eliminar= true;
+            if(ac =="1")
+                actualizar= true;
         }
     }
 }

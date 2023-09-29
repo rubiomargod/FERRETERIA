@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             this.titulo = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.texto = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.Menu = new System.Windows.Forms.ToolStrip();
             this.OptRefacciones = new System.Windows.Forms.ToolStripButton();
@@ -49,7 +49,7 @@
             this.titulo.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titulo.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.titulo.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel2,
+            this.texto,
             this.toolStripLabel1});
             this.titulo.Location = new System.Drawing.Point(0, 0);
             this.titulo.Name = "titulo";
@@ -57,11 +57,11 @@
             this.titulo.Size = new System.Drawing.Size(884, 60);
             this.titulo.TabIndex = 0;
             // 
-            // toolStripLabel2
+            // texto
             // 
-            this.toolStripLabel2.AutoSize = false;
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(390, 50);
+            this.texto.AutoSize = false;
+            this.texto.Name = "texto";
+            this.texto.Size = new System.Drawing.Size(390, 50);
             // 
             // toolStripLabel1
             // 
@@ -145,7 +145,7 @@
         #endregion
 
         private System.Windows.Forms.ToolStrip titulo;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripLabel texto;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStrip Menu;
         private System.Windows.Forms.ToolStripButton OptRefacciones;
