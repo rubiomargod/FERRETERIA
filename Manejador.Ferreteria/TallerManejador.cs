@@ -35,7 +35,7 @@ namespace Manejador.Ferreteria
         {
             _tallerAccesoDatos.EliminarHerramienta(id);
         }
-        public Tuple<bool, string> ValidadUsuario(TALLER nuevaherramienta)
+        public Tuple<bool, string> ValidadHerramienta(TALLER nuevaherramienta)
         {
             string mensaje = "";
             bool valida = true;

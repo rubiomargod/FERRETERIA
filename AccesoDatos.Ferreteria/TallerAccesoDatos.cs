@@ -44,7 +44,8 @@ namespace AccesoDatos.Ferreteria
         {
             var ListaHerramientas = new List<TALLER>();
             var dt = new DataTable();
-            dt = conexion.ObtenerDatos("Select * from taller where nombre like '%{0}%';");
+            var consulta = string.Format("Select * from taller where codigoherramienta like '%{0}%' or nombre like '%{0}%' or medida like '%{0}%' or marca like '%{0}%' or descripcion like '%{0}%';", valor);
+            dt = conexion.ObtenerDatos(consulta);
             foreach (DataRow renglon in dt.Rows)
             {
                 var herramientas = new TALLER

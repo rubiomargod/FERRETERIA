@@ -45,7 +45,8 @@ namespace AccesoDatos.Ferreteria
         {
             var ListaRefacciones = new List<REFACCIONES>();
             var dt = new DataTable();
-            dt = conexion.ObtenerDatos("Select * from REFACCIONES where nombre like '%{0}%';");
+            var consulta = string.Format("Select * from refacciones where nombre like '%{0}%' or codigobarras like '%{0}%' or descripcion like '%{0}%' or marca like '%{0}%';", valor);
+            dt = conexion.ObtenerDatos(consulta);
             foreach (DataRow renglon in dt.Rows)
             {
                 var refacciones = new REFACCIONES
@@ -61,12 +62,12 @@ namespace AccesoDatos.Ferreteria
         }
         public void EliminarRefaccion(int refaccion)
         {
-            string consulta = string.Format("delete from REFACCIONES where codigobarras='{0}';", refaccion);
+            string consulta = string.Format("delete from REFACCIONES where codigobarras={0};", refaccion);
             conexion.EjecutarConsulta(consulta);
         }
         public void ActualizarRefacciones(REFACCIONES refaccion)
         {
-            string consulta = string.Format("update REFACCIONES set nombre='{0}',descripcion='{1}',marca='{2}' where codigobarras={3}",
+            string consulta = string.Format("update REFACCIONES set nombre='{0}',descripcion='{1}',marca='{2}' where codigobarras={3};",
                 refaccion.Nombre,refaccion.Descripcion,refaccion.Marca,refaccion.CodigoBarras);
             conexion.EjecutarConsulta(consulta);
         }

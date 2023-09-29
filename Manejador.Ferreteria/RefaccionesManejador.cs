@@ -39,22 +39,22 @@ namespace Manejador.Ferreteria
         {
             string mensaje ="";
             bool valida = true;
-            if (nuevarefacion.CodigoBarras.ToString() == "")
+            if (nuevarefacion.CodigoBarras == 0)
             {
-                mensaje = mensaje + "El Campo CodigoBarras es Reqerido \n";
+                mensaje = mensaje + "El Campo Codigo Barras es Reqerido \n";
                 valida = false;
             }
-            if (nuevarefacion.Nombre.ToString() == "")
+            if (nuevarefacion.Nombre == "")
             {
                 mensaje = mensaje + "El Campo Nombre es Reqerido \n";
                 valida = false;
             }
-            if (nuevarefacion.Descripcion.ToString() == "")
+            if (nuevarefacion.Descripcion== "")
             {
                 mensaje = mensaje + "El Campo Descripcion es Reqerido \n";
                 valida = false;
             }
-            if (nuevarefacion.Marca.ToString() == "")
+            if (nuevarefacion.Marca== "")
             {
                 mensaje = mensaje + "El Campo Marca es Reqerido \n";
                 valida = false;

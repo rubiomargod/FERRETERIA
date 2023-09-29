@@ -49,6 +49,7 @@
             this.btnModificar.Text = "Modificar";
             this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
@@ -61,6 +62,7 @@
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnNuevo
             // 
@@ -73,10 +75,13 @@
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // dtgHerramientas
             // 
             this.dtgHerramientas.AllowUserToAddRows = false;
+            this.dtgHerramientas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dtgHerramientas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dtgHerramientas.BackgroundColor = System.Drawing.Color.White;
             this.dtgHerramientas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgHerramientas.GridColor = System.Drawing.Color.Black;
@@ -84,22 +89,26 @@
             this.dtgHerramientas.Name = "dtgHerramientas";
             this.dtgHerramientas.Size = new System.Drawing.Size(848, 300);
             this.dtgHerramientas.TabIndex = 10;
+            this.dtgHerramientas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgHerramientas_CellClick);
             // 
             // txtbuscar
             // 
             this.txtbuscar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbuscar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbuscar.ForeColor = System.Drawing.Color.Black;
             this.txtbuscar.Location = new System.Drawing.Point(83, 68);
             this.txtbuscar.Name = "txtbuscar";
-            this.txtbuscar.Size = new System.Drawing.Size(784, 22);
+            this.txtbuscar.Size = new System.Drawing.Size(784, 26);
             this.txtbuscar.TabIndex = 9;
+            this.txtbuscar.TextChanged += new System.EventHandler(this.txtbuscar_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(16, 71);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 16);
+            this.label2.Size = new System.Drawing.Size(61, 18);
             this.label2.TabIndex = 8;
             this.label2.Text = "Buscar:";
             // 

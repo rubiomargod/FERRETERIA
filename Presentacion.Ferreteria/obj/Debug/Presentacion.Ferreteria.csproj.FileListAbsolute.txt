@@ -20,3 +20,6 @@ C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\bin\Debug\Ent
 C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\bin\Debug\Manejador.Ferreteria.pdb
 C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\bin\Debug\AccesoDatos.Ferreteria.pdb
 C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\obj\Debug\Presentacion.Ferreteria.csproj.CopyComplete
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\obj\Debug\Presentacion.Ferreteria.FrmAgregarRefaccion.resources
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\obj\Debug\Presentacion.Ferreteria.FrmAgregarHerramienta.resources
+C:\Users\xrubi\Documents\Github\FERRETERIA\Presentacion.Ferreteria\obj\Debug\Presentacion.Ferreteria.FrmLogin.resources
