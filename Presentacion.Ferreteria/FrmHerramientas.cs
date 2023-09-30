@@ -20,10 +20,17 @@ namespace Presentacion.Ferreteria
         private string medida = "";
         private string marca = "";
         private string descripcion = "";
-        public FrmHerramientas()
+        public FrmHerramientas(bool le, bool es, bool el, bool ac)
         {
             InitializeComponent();
             _herramientasmanejador = new TallerManejador();
+            ControlarBotones(es, el, ac);
+        }
+        private void ControlarBotones(Boolean escribir, Boolean eliminar, Boolean actualizar)
+        {
+            btnNuevo.Enabled = escribir;
+            btnEliminar.Enabled = eliminar;
+            btnModificar.Enabled = actualizar;
         }
         private void FrmHerramientas_Load(object sender, EventArgs e)
         {

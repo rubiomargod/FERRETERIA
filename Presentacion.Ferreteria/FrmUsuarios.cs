@@ -15,7 +15,7 @@ namespace Presentacion.Ferreteria
     public partial class FrmUsuarios : Form
     {
         
-        public FrmUsuarios()
+        public FrmUsuarios(bool le, bool es, bool el, bool ac)
         {
             InitializeComponent();
         }

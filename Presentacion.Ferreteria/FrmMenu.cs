@@ -25,33 +25,33 @@ namespace Presentacion.Ferreteria
 
         private void OptRefacciones_Click(object sender, EventArgs e)
         {
-            FrmRefacciones FR = new FrmRefacciones();
+            FrmRefacciones FR = new FrmRefacciones(lectura,escribir,eliminar,actualizar);
             FR.MdiParent = this;
-            FrmUsuarios FU = new FrmUsuarios();
+            FrmUsuarios FU = new FrmUsuarios(lectura, escribir, eliminar, actualizar);
             FU.Close();
-            FrmHerramientas FH = new FrmHerramientas();
+            FrmHerramientas FH = new FrmHerramientas(lectura, escribir, eliminar, actualizar);
             FH.Close();
             FR .Show();            
         }
 
         private void OptHerramientas_Click(object sender, EventArgs e)
         {
-            FrmHerramientas FH = new FrmHerramientas();
+            FrmHerramientas FH = new FrmHerramientas(lectura, escribir, eliminar, actualizar);
             FH.MdiParent = this;
-            FrmUsuarios FU = new FrmUsuarios();
+            FrmUsuarios FU = new FrmUsuarios(lectura, escribir, eliminar, actualizar);
             FU.Close();
-            FrmRefacciones FR = new FrmRefacciones();
+            FrmRefacciones FR = new FrmRefacciones(lectura, escribir, eliminar, actualizar);
             FR.Close();
             FH.Show();
         }
 
         private void OptUsuarios_Click(object sender, EventArgs e)
         {
-            FrmUsuarios FU = new FrmUsuarios();
+            FrmUsuarios FU = new FrmUsuarios(lectura, escribir, eliminar, actualizar);
             FU.MdiParent = this;
-            FrmHerramientas FH = new FrmHerramientas();
+            FrmHerramientas FH = new FrmHerramientas(lectura, escribir, eliminar, actualizar);
             FH.Close();
-            FrmRefacciones FR = new FrmRefacciones();
+            FrmRefacciones FR = new FrmRefacciones(lectura, escribir, eliminar, actualizar);
             FR.Close();
             FU.Show();
         }

@@ -19,10 +19,17 @@ namespace Presentacion.Ferreteria
         private string nombre = "";
         private string descripcion = "";
         private string marca = "";
-        public FrmRefacciones()
+        public FrmRefacciones(bool le, bool es, bool el, bool ac)
         {
             InitializeComponent();
             _refaccionesManejador = new RefaccionesManejador();
+            ControlarBotones(es,el,ac);
+        }
+        private void ControlarBotones(Boolean escribir,Boolean eliminar,Boolean actualizar)
+        {
+            btnNuevo.Enabled = escribir;
+            btnEliminar.Enabled = eliminar;
+            btnModificar.Enabled = actualizar;
         }
 
         private void FrmRefacciones_Load(object sender, EventArgs e)
