@@ -13,12 +13,12 @@ namespace Entidades.Ferreteria
         private string _ApellidoP;
         private string _ApellidoM;
         private string _FechaNacimiento;
-        private string _RFC;
+        private string _RFC;        
         private string _Clave;
-        private Boolean _Lectura;
-        private Boolean _Escritura;
-        private Boolean _Eliminar;
-        private Boolean _Actualizar;
+        private string _Lectura;
+        private string _Escritura;
+        private string _Eliminar;
+        private string _Actualizar;
 
         public int IdUsuario { get => _IdUsuario; set => _IdUsuario = value; }
         public string Nombre { get => _Nombre; set => _Nombre = value; }
@@ -27,9 +27,9 @@ namespace Entidades.Ferreteria
         public string FechaNacimiento { get => _FechaNacimiento; set => _FechaNacimiento = value; }
         public string RFC { get => _RFC; set => _RFC = value; }
         public string Clave { get => _Clave; set => _Clave = value; }
-        public bool Lectura { get => _Lectura; set => _Lectura = value; }
-        public bool Escritura { get => _Escritura; set => _Escritura = value; }
-        public bool Eliminar { get => _Eliminar; set => _Eliminar = value; }
-        public bool Actualizar { get => _Actualizar; set => _Actualizar = value; }
+        public string Lectura { get => _Lectura; set => _Lectura = value; }
+        public string Escritura { get => _Escritura; set => _Escritura = value; }
+        public string Eliminar { get => _Eliminar; set => _Eliminar = value; }
+        public string Actualizar { get => _Actualizar; set => _Actualizar = value; }
     }
 }

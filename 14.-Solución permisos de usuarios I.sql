@@ -25,16 +25,15 @@ apellidop VARCHAR(50),
 apellidom VARCHAR(50),
 fechanacimiento VARCHAR(50),
 rfc VARCHAR(13),
-usuario VARCHAR(50),
 clave VARCHAR(255),
 lectura BOOLEAN,
 escritura BOOLEAN,
 eliminacion BOOLEAN,
 actualizar BOOLEAN);
 DROP TABLE usuarios;
-INSERT INTO usuarios VALUES(NULL,'Luis Antonio','Zermeño','Muñoz','05/03/02','ZEML050302','administrador',SHA1('12345'),TRUE,TRUE,TRUE,TRUE);
-INSERT INTO usuarios VALUES(NULL,'Luis','Zermeño','Muñoz','05/03/02','ZEML050302','administrador',SHA1('12345'),TRUE,TRUE,TRUE,FALSE);
-INSERT INTO usuarios VALUES(NULL,'Antonio','Zermeño','Muñoz','05/03/02','ZEML050302','administrador',SHA1('12345'),TRUE,TRUE,FALSE,FALSE);
+INSERT INTO usuarios VALUES(NULL,'Luis Antonio','Zermeño','Muñoz','05/03/02','ZEML050302',SHA1('12345'),TRUE,TRUE,TRUE,TRUE);
+INSERT INTO usuarios VALUES(NULL,'Luis','Zermeño','Muñoz','05/03/02','ZEML050302',SHA1('12345'),TRUE,TRUE,FALSE,TRUE);
+INSERT INTO usuarios VALUES(NULL,'Antonio','Zermeño','Muñoz','05/03/02','ZEML050302',SHA1('12345'),TRUE,FALSE,FALSE,FALSE);
 delimiter //
 DROP PROCEDURE if EXISTS P_Validar;
 CREATE PROCEDURE P_Validar(
