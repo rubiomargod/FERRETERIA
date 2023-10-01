@@ -36,6 +36,7 @@
             this.OptRefacciones = new System.Windows.Forms.ToolStripButton();
             this.OptHerramientas = new System.Windows.Forms.ToolStripButton();
             this.OptUsuarios = new System.Windows.Forms.ToolStripButton();
+            this.Optsalir = new System.Windows.Forms.ToolStripButton();
             this.titulo.SuspendLayout();
             this.Menu.SuspendLayout();
             this.SuspendLayout();
@@ -81,6 +82,7 @@
             this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.OptRefacciones,
             this.OptHerramientas,
+            this.Optsalir,
             this.OptUsuarios});
             this.Menu.Location = new System.Drawing.Point(0, 60);
             this.Menu.Name = "Menu";
@@ -122,6 +124,18 @@
             this.OptUsuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.OptUsuarios.Click += new System.EventHandler(this.OptUsuarios_Click);
             // 
+            // Optsalir
+            // 
+            this.Optsalir.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.Optsalir.Image = ((System.Drawing.Image)(resources.GetObject("Optsalir.Image")));
+            this.Optsalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Optsalir.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Optsalir.Name = "Optsalir";
+            this.Optsalir.Size = new System.Drawing.Size(46, 27);
+            this.Optsalir.Text = "Salir";
+            this.Optsalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Optsalir.Click += new System.EventHandler(this.Optsalir_Click);
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -151,6 +165,7 @@
         private System.Windows.Forms.ToolStripButton OptRefacciones;
         private System.Windows.Forms.ToolStripButton OptHerramientas;
         private System.Windows.Forms.ToolStripButton OptUsuarios;
+        private System.Windows.Forms.ToolStripButton Optsalir;
     }
 }
 

@@ -63,14 +63,6 @@ namespace Presentacion.Ferreteria
         {
             dtgrefacciones.DataSource = _refaccionesManejador.BuscarRefaccione(valor);
         }
-
-        private void btnNuevo_Click(object sender, EventArgs e)
-        {
-            FrmAgregarRefaccion FAR = new FrmAgregarRefaccion(0,"","","",0);
-            FAR.ShowDialog();
-            LlenarRefacciones();
-        }
-
         private void dtgrefacciones_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             codigobarra =int.Parse(dtgrefacciones.CurrentRow.Cells["codigobarras"].Value.ToString());
@@ -82,6 +74,12 @@ namespace Presentacion.Ferreteria
         private void btnModificar_Click(object sender, EventArgs e)
         {
             FrmAgregarRefaccion FAR = new FrmAgregarRefaccion(codigobarra,nombre,descripcion,marca,1);
+            FAR.ShowDialog();
+            LlenarRefacciones();
+        }
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            FrmAgregarRefaccion FAR = new FrmAgregarRefaccion(0, "", "", "", 0);
             FAR.ShowDialog();
             LlenarRefacciones();
         }

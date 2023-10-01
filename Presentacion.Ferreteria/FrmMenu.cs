@@ -19,7 +19,7 @@ namespace Presentacion.Ferreteria
         public FrmMenu(string le, string es, string el, string ac)
         {
             InitializeComponent();
-            texto.Text = string.Format("{0},{1},{2},{3}",le,es,el,ac);
+            //texto.Text = string.Format("{0},{1},{2},{3}",le,es,el,ac);
             permisos(le,es,el,ac);
         }
 
@@ -65,6 +65,14 @@ namespace Presentacion.Ferreteria
                 eliminar= true;
             if(ac =="1")
                 actualizar= true;
+        }
+
+        private void Optsalir_Click(object sender, EventArgs e)
+        {
+            FrmLogin FL = new FrmLogin();
+            Hide();
+            FL.ShowDialog();
+            this.Close();
         }
     }
 }

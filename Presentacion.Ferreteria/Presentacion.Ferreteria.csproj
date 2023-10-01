@@ -58,6 +58,12 @@
     <Compile Include="FrmAgregarRefaccion.Designer.cs">
       <DependentUpon>FrmAgregarRefaccion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAgregarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarUsuarios.Designer.cs">
+      <DependentUpon>FrmAgregarUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmHerramientas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAgregarRefaccion.resx">
       <DependentUpon>FrmAgregarRefaccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarUsuarios.resx">
+      <DependentUpon>FrmAgregarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHerramientas.resx">
       <DependentUpon>FrmHerramientas.cs</DependentUpon>
