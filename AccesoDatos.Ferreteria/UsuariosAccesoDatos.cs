@@ -87,5 +87,13 @@ namespace AccesoDatos.Ferreteria
                 , usuario.Escritura, usuario.Eliminar, usuario.Actualizar,usuario.IdUsuario);
             conexion.EjecutarConsulta(consulta);
         }
+        public void ActualizarUsuarioConContraseña (USUARIOS usuario)
+        {
+            string consulta = string.Format("update USUARIOS set nombre='{0}',apellidop='{1}',apellidom='{2}',fechanacimiento='{3}'," +
+                "rfc='{4}',clave=SHA1('{10}'),lectura={5},escritura={6},eliminacion={7},actualizar={8} where idusuario={9};",
+                usuario.Nombre, usuario.ApellidoP, usuario.ApellidoM, usuario.FechaNacimiento, usuario.RFC, usuario.Lectura
+                , usuario.Escritura, usuario.Eliminar, usuario.Actualizar, usuario.IdUsuario, usuario.Clave);
+            conexion.EjecutarConsulta(consulta);
+        }
     }
 }

@@ -30,6 +30,7 @@ namespace Presentacion.Ferreteria
                 txtFechaN.Text =f.ToString();
                 txtRFC.Text =rfc.ToString();
                 //txtClave.Text =c.ToString();
+                lblClave.Text = "Nueva Clave (Opcional)";
                 if(l.ToString().ToLower()=="true")
                 ChkbLectura.Checked=true;
                 if (es.ToString().ToLower() == "true")
@@ -63,7 +64,8 @@ namespace Presentacion.Ferreteria
             nuevousuario.ApellidoM = txtApellidoM.Text;
             nuevousuario.FechaNacimiento = txtFechaN.Text;
             nuevousuario.RFC = txtRFC.Text;
-            nuevousuario.Clave = txtClave.Text;
+            //if(txtClave.Text!="")
+            //nuevousuario.Clave = txtClave.Text;
             if (ChkbLectura.Checked == true)
                 nuevousuario.Lectura = "true";
             else
@@ -82,7 +84,14 @@ namespace Presentacion.Ferreteria
                 nuevousuario.Actualizar = "false";
             var validar = _usuariosmanejador.ValidarUsuario(nuevousuario);
             if (validar.Item1)
-            {
+            {   
+                if(txtClave.Text!="")
+                {
+                    nuevousuario.Clave = txtClave.Text;
+                    _usuariosmanejador.ActualizarUsuarioConContraseña(nuevousuario);
+                    this.Close();
+                }
+                else
                 _usuariosmanejador.ActualizarUsuarios(nuevousuario);
                 this.Close();
             }

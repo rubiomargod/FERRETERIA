@@ -16,11 +16,14 @@ namespace Presentacion.Ferreteria
         private bool escribir=false;
         private bool eliminar =false;
         private bool actualizar=false;
-        public FrmMenu(string le, string es, string el, string ac)
+        private string usuario="LUIS ANTONIO";
+        public FrmMenu(string le, string es, string el, string ac,string user)
         {
             InitializeComponent();
-            //texto.Text = string.Format("{0},{1},{2},{3}",le,es,el,ac);
             permisos(le,es,el,ac);
+            if(user.ToUpper() != usuario)
+                OptUsuarios.Enabled = false;
+            
         }
 
         private void OptRefacciones_Click(object sender, EventArgs e)

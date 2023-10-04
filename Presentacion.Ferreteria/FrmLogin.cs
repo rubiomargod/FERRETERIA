@@ -27,7 +27,7 @@ namespace Presentacion.Ferreteria
             if (_loginmanejador.ValidarAcceso(txtUsuario.Text, txtClave.Text))
             {
                 Permisos(txtUsuario.Text);
-                FrmMenu FM = new FrmMenu(arreglo[0], arreglo[1], arreglo[2],arreglo[3]);
+                FrmMenu FM = new FrmMenu(arreglo[0], arreglo[1], arreglo[2],arreglo[3],txtUsuario.Text);
                 Hide();
                 FM.ShowDialog();
                 this.Close();

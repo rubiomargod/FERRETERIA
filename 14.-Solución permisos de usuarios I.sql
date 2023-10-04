@@ -1,23 +1,21 @@
+/*CREAMOS LA BASE DE DATOS*/
 CREATE DATABASE FERRETERIA;
-
+/*SELECCIONAMOS LA BASE DE DATOS PREVIAMENTE CREADA*/
 USE FERRETERIA;
-
+/*CREAMOS LA TABLA REFACIIONES Y SUS ATRIBUTOS*/
 CREATE TABLE refacciones(
 codigobarras INT PRIMARY KEY,
 nombre VARCHAR(50),
 descripcion VARCHAR(200),
 marca VARCHAR(50));
-INSERT INTO refacciones VALUES(54346,'Rines','para tornado 2008','apocalipsy');
-INSERT INTO refacciones VALUES(54357,'llanta','para chevy 2008','chevrolet');
-
+/*CREAMOS LA TABLA taller Y SUS ATRIBUTOS*/
 CREATE TABLE taller(
 codigoherramienta INT PRIMARY KEY,
 nombre VARCHAR(50),
 medida VARCHAR(10),
 marca VARCHAR(50),
 descripcion VARCHAR(200));
-INSERT INTO taller VALUES(5454,'llave inglesa','27cm','truper','color plateada');
-INSERT INTO taller VALUES(3232,'pinsas','19cm','hermex','color negro');
+/*CREAMOS LA TABLA taller Y SUS ATRIBUTOS*/
 CREATE TABLE USUARIOS(
 idusuario INT PRIMARY KEY AUTO_INCREMENT,
 nombre VARCHAR(50),
@@ -30,10 +28,9 @@ lectura BOOLEAN,
 escritura BOOLEAN,
 eliminacion BOOLEAN,
 actualizar BOOLEAN);
-DROP TABLE usuarios;
+/*INSERTAMOS UN DATO EN LA TABLA USUARIOS*/
 INSERT INTO usuarios VALUES(NULL,'Luis Antonio','Zermeño','Muñoz','05/03/02','ZEML050302',SHA1('12345'),TRUE,TRUE,TRUE,TRUE);
-INSERT INTO usuarios VALUES(NULL,'Luis','Zermeño','Muñoz','05/03/02','ZEML050302',SHA1('12345'),TRUE,TRUE,FALSE,TRUE);
-INSERT INTO usuarios VALUES(NULL,'Antonio','Zermeño','Muñoz','05/03/02','ZEML050302',SHA1('12345'),TRUE,FALSE,FALSE,FALSE);
+/*CREAMOS UN PROCESO ALMACENADO PARA VALIDAR USUARIO*/
 delimiter //
 DROP PROCEDURE if EXISTS P_Validar;
 CREATE PROCEDURE P_Validar(
@@ -49,11 +46,9 @@ SELECT 'Error' AS rs;
 END if;
 END;
 //
+/*IMVOCAMOS EL PROCESO ALMACENADO PARA VERIFICAR SU FUNCIONAMIENTO*/
 CALL P_Validar('Luis Antonio',SHA1('12345'));
-SELECT u.lectura,u.escritura,u.eliminacion,u.actualizar FROM usuarios u WHERE nombre='Luis Antonio' ;
-
-
-
+/*CREAMOS UN PROCESO ALMACENADO PARA EXTRAER LOS PERMISOS DEL USUARIO*/
 delimiter //
 DROP PROCEDURE if EXISTS P_Permisos;
 CREATE PROCEDURE P_Permisos(
@@ -67,9 +62,8 @@ SELECT u.lectura FROM usuarios u WHERE nombre=_nombre INTO _lectura;
 SELECT u.escritura FROM usuarios u WHERE nombre=_nombre INTO _escritura;
 SELECT u.eliminacion FROM usuarios u WHERE nombre=_nombre INTO _eliminacion;
 SELECT u.actualizar FROM usuarios u WHERE nombre=_nombre INTO _actualizar;
-
 SELECT CONCAT(_lectura,',',_escritura,',',_eliminacion,',',_actualizar) AS rs;
-
 END;
 //
-CALL P_Permisos('Luis Antonio');
+/*IMVOCAMOS EL PROCESO ALMACENADO PARA VERIFICAR EXTRAER LOS PERMISOS*/
+CALL P_Permisos('lUIS ANTONIO');

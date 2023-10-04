@@ -31,6 +31,10 @@ namespace Manejador.Ferreteria
         {
             _usuariosaccesodatos.ActualizarUsuario(usuario);
         }
+        public void ActualizarUsuarioConContraseña(USUARIOS usuario)
+        {
+            _usuariosaccesodatos.ActualizarUsuarioConContraseña(usuario);
+        }
         public void EliminarUsuario(int usuario)
         {
             _usuariosaccesodatos.EliminarUsuario(usuario);
@@ -62,11 +66,6 @@ namespace Manejador.Ferreteria
             if (nuevousuario.RFC == "")
             {
                 mensaje = mensaje + "El Campo RFC es Reqerido \n";
-                valida = false;
-            }
-            if (nuevousuario.Clave == "")
-            {
-                mensaje = mensaje + "El Campo Clave es Reqerido \n";
                 valida = false;
             }
             if (nuevousuario.Lectura == "")

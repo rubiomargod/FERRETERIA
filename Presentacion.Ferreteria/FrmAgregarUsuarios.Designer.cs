@@ -36,7 +36,7 @@
             this.txtApellidoM = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtClave = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblClave = new System.Windows.Forms.Label();
             this.txtRFC = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtFechaN = new System.Windows.Forms.TextBox();
@@ -116,14 +116,14 @@
             this.txtClave.Size = new System.Drawing.Size(400, 26);
             this.txtClave.TabIndex = 6;
             // 
-            // label4
+            // lblClave
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 364);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 18);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "Clave";
+            this.lblClave.AutoSize = true;
+            this.lblClave.Location = new System.Drawing.Point(9, 364);
+            this.lblClave.Name = "lblClave";
+            this.lblClave.Size = new System.Drawing.Size(48, 18);
+            this.lblClave.TabIndex = 29;
+            this.lblClave.Text = "Clave";
             // 
             // txtRFC
             // 
@@ -245,7 +245,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtClave);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblClave);
             this.Controls.Add(this.txtRFC);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtFechaN);
@@ -259,7 +259,7 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmAgregarUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAgregarUsuarios";
@@ -279,7 +279,7 @@
         private System.Windows.Forms.TextBox txtApellidoM;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtClave;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblClave;
         private System.Windows.Forms.TextBox txtRFC;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtFechaN;
